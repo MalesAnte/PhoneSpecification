@@ -101,7 +101,7 @@ if($prijavljeni_korisnik["typeOfUser"] !='korisnik'){
                     <li class="list-group-item">
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="checkbox" class="form-check-input ponuda_check" value="<?= $row['Memorija']; ?>" id="Memorija"><?= $row['Memorija']; ?>
+                                    <input type="checkbox" class="form-check-input ponuda_check" value="<?= $row['Memorija']; ?>" id="memorija"><?= $row['Memorija']; ?>
                                 </label>
                             </div>
                     </li>
@@ -153,23 +153,6 @@ if($prijavljeni_korisnik["typeOfUser"] !='korisnik'){
                             <div class="form-check">
                                 <label class="form-check-label">
                                     <input type="checkbox" class="form-check-input ponuda_check" value="<?= $row['Baterija']; ?>" id="baterija"><?= $row['Baterija']; ?>
-                                </label>
-                            </div>
-                    </li>
-                    <?php } ?>
-                </ul>
-
-                <h6 class="text-info">Zaslon</6>
-                <ul class="list-group">
-                    <?php
-                        $sql="SELECT DISTINCT Zaslon FROM ponuda ORDER BY Zaslon";
-                        $result=$konekcija->query($sql);
-                        while($row=$result->fetch_assoc()){
-                    ?>
-                    <li class="list-group-item">
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="checkbox" class="form-check-input ponuda_check" value="<?= $row['Zaslon']; ?>" id="zaslon"><?= $row['Zaslon']; ?>
                                 </label>
                             </div>
                     </li>

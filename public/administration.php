@@ -470,6 +470,8 @@ $products=$results->fetch_all(MYSQLI_ASSOC);
                                         <th scope="col">Memorija</th>
                                         <th scope="col">Procesor</th>
                                         <th scope="col">Cijena</th>
+                                        <th scope="col">Baterija</th>
+                                        <th scope="col">Zaslon</th>
                                         <th scope="col">Uredi</th>
                                     </tr>
                                 </thead>
@@ -485,6 +487,8 @@ $products=$results->fetch_all(MYSQLI_ASSOC);
                                         <td class="align-middle text-center"><?=$product['Memorija']?></td>
                                         <td class="align-middle text-center"><?=$product['Procesor']?></td>
                                         <td class="align-middle text-center"><?=$product['Cijena']?> Kn</td>
+                                        <td class="align-middle text-center"><?=$product['Baterija']?></td>
+                                        <td class="align-middle text-center"><?=$product['Zaslon']?></td>
                                         <td class="align-middle">
                                             <a href="#" class="btn btn-success mb-1" title="Uređivanje profila">Uredi</a>
                                             <a  type="button" class="btn btn-danger text-white delete-product" data-toggle="modal" data-id="<?= $product["ID"] ?>" data-target="#deleteWarningProd">Izbriši</a>
